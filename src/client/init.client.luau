@@ -1,1 +1,2 @@
-print("Hello world, from client!")
+﻿-- Entry LocalScript (client)
+require(script.Parent:WaitForChild("ClientBoot"))

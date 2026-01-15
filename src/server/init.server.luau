@@ -1,1 +1,2 @@
-print("Hello world, from server!")
+﻿-- Entry Script (server)
+require(script.Parent:WaitForChild("ServerBoot"))
