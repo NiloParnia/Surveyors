@@ -1,0 +1,6 @@
+﻿{
+  "assets": [
+    { "key": "TokenPickup", "type": "Model", "studioPath": "ReplicatedStorage/Assets/Models/TokenPickup", "status": "planned", "notes": "Pickup model used for held currency." },
+    { "key": "CorridorRoom", "type": "Model", "studioPath": "ReplicatedStorage/Assets/Rooms/CorridorRoom", "status": "planned", "notes": "Basic room module for MVP." }
+  ]
+}
