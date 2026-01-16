@@ -1,5 +1,13 @@
-# Surveyors ChatGPT Snapshot\n\nGenerated: 2026-01-16 13:17:49 UTC\nBranch: main\nHEAD: ae7c99e3f63d1704911a50b661dd60ea5dc6015f\nLast commit: ae7c99e chore: fix snapshot workflow (track file + stage-before-diff)\n\n## Changed files (last commit)\n```\n.github/workflows/chatgpt_snapshot.yml
-docs/CHATGPT_SNAPSHOT.md\n```\n\n## Git tracked files\n```\n.gitattributes
+# Surveyors ChatGPT Snapshot\n\nGenerated: 2026-01-16 13:45:10 UTC\nBranch: main\nHEAD: 8e9e00b8e8f0c3752b5d5cfe7fed27b45c5fcf12\nLast commit: 8e9e00b Add Studio asset contract (manifest + resolver + audit)\n\n## Changed files (last commit)\n```\ndefault.project.json
+docs/assets/ASSET_CATALOG.md
+docs/assets/assets.json
+src/client/Controllers/HUDController.luau
+src/client/Controllers/_KeepController.luau
+src/server/Services/AssetAuditService.luau
+src/server/Services/RunService.luau
+src/server/Services/_KeepService.luau
+src/shared/Assets/AssetDefs.luau
+src/shared/Assets/Assets.luau\n```\n\n## Git tracked files\n```\n.gitattributes
 .github/workflows/chatgpt_snapshot.yml
 .gitignore
 README.md
@@ -12,39 +20,53 @@ docs/03-NEXT-STEPS.md
 docs/04-TROUBLESHOOTING.md
 docs/CHATGPT_SNAPSHOT.md
 docs/MIRA_CONTEXT.md
+docs/assets/ASSET_CATALOG.md
+docs/assets/assets.json
 src/client/ClientBoot.luau
+src/client/Controllers/HUDController.luau
+src/client/Controllers/_KeepController.luau
 src/client/ControllersLoader.luau
 src/client/init.client.luau
 src/server/RemotesSetup.luau
 src/server/ServerBoot.luau
+src/server/Services/AssetAuditService.luau
+src/server/Services/RunService.luau
+src/server/Services/_KeepService.luau
 src/server/ServicesLoader.luau
 src/server/init.server.luau
+src/shared/Assets/AssetDefs.luau
+src/shared/Assets/Assets.luau
 src/shared/Config/GameConfig.lua
 src/shared/Hello.luau
 src/shared/Net/Net.luau
 src/shared/Net/RemoteDefs.luau
 src/shared/Util/Util.lua
 tools/make_chatgpt_snapshot.py\n```\n\n## default.project.json\n```\n{
-  "name": "Game",
-  "tree": {
-    "$className": "DataModel",
-    "ReplicatedStorage": {
-      "$className": "ReplicatedStorage",
-      "Shared": { "$path": "src/shared" },
-      "Assets": { "$path": "src/Assets" }
-    },
-    "ServerScriptService": {
-      "$className": "ServerScriptService",
-      "Server": { "$path": "src/server" }
-    },
-    "StarterPlayer": {
-      "$className": "StarterPlayer",
-      "StarterPlayerScripts": {
-        "$className": "StarterPlayerScripts",
-        "Client": { "$path": "src/client" }
-      }
-    }
-  }
+    "name":  "Game",
+    "tree":  {
+                 "$className":  "DataModel",
+                 "ReplicatedStorage":  {
+                                           "$className":  "ReplicatedStorage",
+                                           "Shared":  {
+                                                          "$path":  "src/shared"
+                                                      }
+                                       },
+                 "ServerScriptService":  {
+                                             "$className":  "ServerScriptService",
+                                             "Server":  {
+                                                            "$path":  "src/server"
+                                                        }
+                                         },
+                 "StarterPlayer":  {
+                                       "$className":  "StarterPlayer",
+                                       "StarterPlayerScripts":  {
+                                                                    "$className":  "StarterPlayerScripts",
+                                                                    "Client":  {
+                                                                                   "$path":  "src/client"
+                                                                               }
+                                                                }
+                                   }
+             }
 }
 \n```\n\n## README.md\n```\n﻿# Surveyors
 
