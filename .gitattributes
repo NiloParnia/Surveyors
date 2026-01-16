@@ -1,0 +1,5 @@
+﻿* text=auto
+*.md text eol=lf
+*.json text eol=lf
+*.luau text eol=lf
+*.lua text eol=lf
